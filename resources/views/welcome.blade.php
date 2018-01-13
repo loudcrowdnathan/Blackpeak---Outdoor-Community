@@ -9,6 +9,9 @@
         <!-- LESS -->
         <link href="/Resources/LESS" rel="stylesheet">
 
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -25,18 +28,22 @@
     </head>
     <body>
       <section class="topbar">
-        <p class="text-center">Sign up for beta access here <i class="fas fa-arrow-circle-right"></i></p>
+        <p class="text-center">Sign up for the Blackpeak newsletter here <i class="fas fa-arrow-circle-right"></i></p>
       </section>
       <header class="navigation-dark">
         <div class="header-logo">
-          <img src="/img/logo-symbol.svg" />
+          <img src="/img/logo-long.png" alt="Blackpeak - The online outdoor community"/>
         </div>
         <div class="nav-right">
           <ul>
             <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
+            <li>Activities</li>
+            <li>News</li>
+            <li>Events</li>
+            <li>Shop</li>
+            <li>Contact Us</li>
+            <li class="accounts">Register</li>
+            <li class="accounts"><i class="fas fa-question-circle"></i></li>
           </ul>
         </div>
       </header>
