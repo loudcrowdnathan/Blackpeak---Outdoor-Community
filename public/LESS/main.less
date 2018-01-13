@@ -1,16 +1,32 @@
 // Headers //
 header.navigation-dark {
-  background-color: @blackpeakgrey;
+  background-color: @blackpeakgreylight;
   display: flex;
   div.header-logo {
     padding: 25px;
+    margin-left: 15%;
     width: 50%;
     img {
-      width: 35%;
+      width: 10%;
     }
   }
   div.nav-right {
-    padding: 25px;
+    padding-top: 55px;
     width: 50%;
+    ul {
+      list-style-type: none;
+      font-weight: 700;
+      li {
+        float:  left;
+        margin: 0px 10px;
+      }
+    }
   }
+}
+section.header-splash {
+  width: 100%;
+  background-image: url('/img/header.jpg');
+  background-size: cover;
+  background-position: center center;
+  min-height: 500px;
 }
