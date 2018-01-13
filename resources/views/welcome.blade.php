@@ -24,6 +24,9 @@
 
     </head>
     <body>
+      <section class="topbar">
+        <p class="text-center">Sign up for beta access here <i class="fas fa-arrow-circle-right"></i></p>
+      </section>
       <header class="navigation-dark">
         <div class="header-logo">
           <img src="/img/logo-symbol.svg" />
@@ -38,7 +41,10 @@
         </div>
       </header>
       <section class="header-splash">
-        
+
+      </section>
+      <section class="activities">
+
       </section>
     </body>
 </html>

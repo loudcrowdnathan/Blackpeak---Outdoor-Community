@@ -1,4 +1,5 @@
 // Headers //
+
 header.navigation-dark {
   background-color: @blackpeakgreylight;
   display: flex;
@@ -23,10 +24,25 @@ header.navigation-dark {
     }
   }
 }
+
+// Sections //
+
 section.header-splash {
   width: 100%;
-  background-image: url('/img/header.jpg');
+  background-color: @fitbitblue;
   background-size: cover;
   background-position: center center;
   min-height: 500px;
+  padding: 0px;
+}
+
+section.topbar {
+  width: 100%;
+  background-color: @blackpeakgrey;
+  min-height: 30px;
+  color: white;
+  padding: 0px;
+  p.text-center {
+    padding: 5px;
+  }
 }
