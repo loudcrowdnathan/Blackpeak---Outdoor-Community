@@ -4,13 +4,15 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#1A1A1A">
         <title>Blackpeak - The Online Outdoor Community</title>
-
-        <!-- LESS -->
-        <link href="/Resources/LESS" rel="stylesheet">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+        <!-- LESS -->
+        <link href="/Resources/LESS" rel="stylesheet">
 
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -28,30 +30,52 @@
     </head>
     <body>
       <section class="topbar">
-        <p class="text-center">Sign up for the Blackpeak newsletter here <i class="fas fa-arrow-circle-right"></i></p>
+        <p class="text-center"><a href="#">Sign up for the Blackpeak newsletter here <i class="fas fa-arrow-circle-right"></i></a></p>
       </section>
       <header class="navigation-dark">
         <div class="header-logo">
-          <img src="/img/logo-long.png" alt="Blackpeak - The online outdoor community"/>
+          <img src="/img/logo-long.svg" alt="Blackpeak - The online outdoor community"/>
         </div>
         <div class="nav-right">
           <ul>
-            <li>Home</li>
-            <li>Activities</li>
-            <li>News</li>
-            <li>Events</li>
-            <li>Shop</li>
-            <li>Contact Us</li>
-            <li class="accounts">Register</li>
-            <li class="accounts"><i class="fas fa-question-circle"></i></li>
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/">Activities <i class="fas fa-caret-down"></i></a></li>
+            <li><a href="/">News</a></li>
+            <li><a href="/">Events</a></li>
+            <li><a href="/">Shop</a></li>
+            <li><a href="/">Contact Us</a></li>
+            <li class="accounts"><a href="/">Register</a></li>
+            <li class="accounts"><a href="/"><i class="fas fa-question-circle"></i></a></li>
           </ul>
         </div>
       </header>
       <section class="header-splash">
+        <div class="header-content">
+          <h1 class="text-center">Welcome to Blackpeak</h1>
+          <p class="text-center">
+            The Online Outdoor Community
+          </p>
+        </div>
+      </section>    
+      <footer class="darkfooter">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-xs-3">
+            <h5 class="footerheader text-center">Company</h5>
+            <hr />
+            <img src="/img/logo-symbol-white.svg" style="width: 30%;"/>
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-3">
+            <h5 class="footerheader text-center">Shop</h5>
+            <hr />
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-3">
+            <h5 class="footerheader text-center">Events</h5>
+            <hr />
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-3">
 
-      </section>
-      <section class="activities">
-
-      </section>
+          </div>
+        </div>
+      </footer>
     </body>
 </html>

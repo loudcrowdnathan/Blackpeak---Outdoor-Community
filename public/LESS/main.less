@@ -7,11 +7,11 @@ header.navigation-dark {
     padding: 25px;
     width: 50%;
     img {
-      width: 50%;
+      width: 30%;
     }
   }
   div.nav-right {
-    padding-top: 5vh;
+    padding-top: 3vh;
     width: 50%;
     ul {
       list-style-type: none;
@@ -19,7 +19,21 @@ header.navigation-dark {
       li {
         float:  left;
         margin: 0px 10px;
+        a {
+          color: @blackpeakgrey;
+        &.active {
+          color: @fitbit;
+          text-decoration: underline;
+        }
+        }
+      &.accounts {
+        color: @fitbitpink;
+        a{
+          color: @fitbitpink;
+        }
       }
+      }
+
     }
   }
 }
@@ -33,6 +47,11 @@ section.header-splash {
   background-position: center center;
   min-height: 500px;
   padding: 0px;
+  div.header-content {
+    width: 100%;
+    padding-top: 200px;
+    color: @blackpeakgreylight;
+  }
 }
 
 section.topbar {
@@ -41,7 +60,32 @@ section.topbar {
   min-height: 30px;
   color: white;
   padding: 0px;
+  a {
+    color: white;
+  }
   p.text-center {
     padding: 5px;
+    margin: 0;
+  }
+}
+
+section.activities {
+
+}
+
+// footer //
+footer.darkfooter {
+  width: 100%;
+  background-color: @blackpeakgrey;
+  overflow: hidden;
+  padding-top: 25px;
+  hr {
+    border-color: white;
+    width: 30%;
+  }
+  h5.footerheader {
+    color: white;
+    font-weight: 100;
+    margin: 0;
   }
 }
