@@ -56,13 +56,13 @@
             The Online Outdoor Community
           </p>
         </div>
-      </section>    
+      </section>
       <footer class="darkfooter">
         <div class="row">
           <div class="col-lg-3 col-md-3 col-xs-3">
             <h5 class="footerheader text-center">Company</h5>
             <hr />
-            <img src="/img/logo-symbol-white.svg" style="width: 30%;"/>
+
           </div>
           <div class="col-lg-3 col-md-3 col-xs-3">
             <h5 class="footerheader text-center">Shop</h5>
@@ -71,9 +71,22 @@
           <div class="col-lg-3 col-md-3 col-xs-3">
             <h5 class="footerheader text-center">Events</h5>
             <hr />
+
           </div>
           <div class="col-lg-3 col-md-3 col-xs-3">
-
+            <img src="/img/logo-long-white.svg" style="width: 75%;"/>
+            <p class="footer-text">
+              Subscribe to the Blackpeak newsletter for updates on events, competitions &amp; up-coming changes to the website.
+            </p>
+            <form class="newsletter">
+            <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email Address">
+            </div>
+            <button type="submit" class="btn btn-primary newsletter-submit">Submit</button>
+          </form>
           </div>
         </div>
       </footer>

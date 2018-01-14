@@ -63,6 +63,10 @@ section.topbar {
   padding: 0px;
   a {
     color: white;
+    &:hover {
+      color: @blackpeakgold;
+      text-decoration: none;
+    }
   }
   p.text-center {
     padding: 5px;
@@ -79,14 +83,31 @@ footer.darkfooter {
   width: 100%;
   background-color: @blackpeakgrey;
   overflow: hidden;
-  padding-top: 25px;
+  padding: 25px 50px;
   hr {
     border-color: white;
     width: 30%;
+  }
+  p.footer-text {
+    padding-top: 25px;
+    color: white;
   }
   h5.footerheader {
     color: white;
     font-weight: 100;
     margin: 0;
+  }
+  form.newsletter {
+    padding: 20px 0px;
+    button.newsletter-submit {
+      background-color: @fitbitblue;
+      color: @blackpeakgreylight;
+      border: 0px;
+      width: 100%;
+      &:hover {
+        background-color: @blackpeakgreylight;
+        color: @blackpeakgrey;
+      }
+    }
   }
 }
