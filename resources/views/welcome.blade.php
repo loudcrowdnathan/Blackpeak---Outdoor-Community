@@ -60,16 +60,16 @@
       <section class="activities">
         <div class="row">
           <div class="col-lg-3">
-
+		  	Content A
           </div>
           <div class="col-lg-3">
-
+		  	Content B
           </div>
           <div class="col-lg-3">
-
+			Content C
           </div>
           <div class="col-lg-3">
-
+		  	Content D
           </div>
         </div>
       </section>    
