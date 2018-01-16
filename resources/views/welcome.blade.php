@@ -60,19 +60,47 @@
       <section class="activities">
         <div class="row">
           <div class="col-lg-3">
-		  	Content A
+            <div class="activity-card">
+            <div class="activity-card-image">
+              <img src="http://via.placeholder.com/350x350" />
+            </div>
+            <div class="activity-card-content">
+              Content A
+            </div>
+          </div>
           </div>
           <div class="col-lg-3">
-		  	Content B
+            <div class="activity-card">
+            <div class="activity-card-image">
+              <img src="http://via.placeholder.com/350x350" />
+            </div>
+            <div class="activity-card-content">
+              Content A
+            </div>
+          </div>
           </div>
           <div class="col-lg-3">
-			Content C
+            <div class="activity-card">
+            <div class="activity-card-image">
+              <img src="http://via.placeholder.com/350x350" />
+            </div>
+            <div class="activity-card-content">
+              Content A
+            </div>
+          </div>
           </div>
           <div class="col-lg-3">
-		  	Content D
+            <div class="activity-card">
+            <div class="activity-card-image">
+              <img src="http://via.placeholder.com/350x350" />
+            </div>
+            <div class="activity-card-content">
+              Content A
+            </div>
+          </div>
           </div>
         </div>
-      </section>    
+      </section>
       <footer class="darkfooter">
         <div class="row">
           <div class="col-lg-3 col-md-3 col-xs-3">
