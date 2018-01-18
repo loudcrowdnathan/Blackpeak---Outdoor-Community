@@ -46,10 +46,42 @@ section.header-splash {
   background-size: cover;
   background-position: center center;
   padding: 0px;
+  min-height: 60vh;
+  &.one {
+    background-image: url('/img/slide1.jpg');
+  }
+  &.two {
+    background-image: url('/img/slide2.jpg');
+  }
+  &.three {
+    background-image: url('/img/slide3.jpg');
+  }
+  &.four {
+    background-image: url('/img/slide4.jpg');
+  }
   div.header-content {
     width: 100%;
     padding: 200px;
     color: @blackpeakgreylight;
+    position: relative;
+    div.slide-content {
+      background-color: black;
+      padding: 20px;
+      display: block;
+      overflow: auto;
+      float: left;
+      h1 {
+        &.textarea1 {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 800;
+        }
+      }
+      p {
+        &.textarea2 {
+          font-family: 'Montserrat', sans-serif;
+        }
+      }
+    }
   }
 }
 div.activity-card {

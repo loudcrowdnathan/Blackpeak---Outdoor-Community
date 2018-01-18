@@ -14,8 +14,14 @@
         <!-- LESS -->
         <link href="/Resources/LESS" rel="stylesheet">
 
+        <!-- Video Player -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script>
+
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Slick Slider -->
+        <script type="text/javascript" src="/slick/slick.min.js"></script>
 
         <!-- Fontawesome 5 -->
         <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
@@ -34,7 +40,7 @@
       </section>
       <header class="navigation-dark">
         <div class="header-logo">
-          <img src="/img/logo-long.svg" alt="Blackpeak - The online outdoor community"/>
+          <img src="/img/logo-long-new.svg" alt="Blackpeak - The online outdoor community"/>
         </div>
         <div class="nav-right">
           <ul>
@@ -49,90 +55,57 @@
           </ul>
         </div>
       </header>
-      <section class="header-splash">
-        <div class="header-content">
-          <h1 class="text-center">Welcome to Blackpeak</h1>
-          <p class="text-center">
-            The Online Outdoor Community
-          </p>
-        </div>
-      </section>
-      <section class="activities">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="activity-card">
-            <div class="activity-card-image">
-              <img src="http://via.placeholder.com/350x350" />
-            </div>
-            <div class="activity-card-content">
-              Content A
-            </div>
-          </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="activity-card">
-            <div class="activity-card-image">
-              <img src="http://via.placeholder.com/350x350" />
-            </div>
-            <div class="activity-card-content">
-              Content A
-            </div>
-          </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="activity-card">
-            <div class="activity-card-image">
-              <img src="http://via.placeholder.com/350x350" />
-            </div>
-            <div class="activity-card-content">
-              Content A
+      @php
+        $slides = (object)array(
+          (object)array(
+            'SlideTitle' => 'CLIMBING EVENTS',
+            'SubTitle' => 'Head to our events area for updates on climbing events and competitions',
+            'Class' => 'one',
+          ),
+          (object)array(
+            'SlideTitle' => 'FELL RUNNING',
+            'SubTitle' => 'Find fell running events across the UK and sign up to take part',
+            'Class' => 'two',
+          ),
+          (object)array(
+            'SlideTitle' => 'ACHIEVEMENTS',
+            'SubTitle' => 'Track your progress to earn achievements and awards',
+            'Class' => 'three',
+          ),          
+        );
+      @endphp
+      <div class="SlickMe">
+        @foreach($slides as $slide)
+          <section class="header-splash {{$slide->Class}}">
+            <div class="header-content">
+              <div class="slide-content">
+              <h1 class="textarea1">{{$slide->SlideTitle}}</h1>
+              <p class="textarea2">
+                {{$slide->SubTitle}}
+              </p>
             </div>
           </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="activity-card">
-            <div class="activity-card-image">
-              <img src="http://via.placeholder.com/350x350" />
-            </div>
-            <div class="activity-card-content">
-              Content A
-            </div>
-          </div>
-          </div>
-        </div>
-      </section>
+          </section>
+        @endforeach
+      </div>
       <footer class="darkfooter">
         <div class="row">
           <div class="col-lg-3 col-md-3 col-xs-3">
-            <h5 class="footerheader text-center">Company</h5>
-            <hr />
+
 
           </div>
           <div class="col-lg-3 col-md-3 col-xs-3">
-            <h5 class="footerheader text-center">Shop</h5>
-            <hr />
-          </div>
-          <div class="col-lg-3 col-md-3 col-xs-3">
-            <h5 class="footerheader text-center">Events</h5>
-            <hr />
 
           </div>
           <div class="col-lg-3 col-md-3 col-xs-3">
-            <img src="/img/logo-long-white.svg" style="width: 75%;"/>
-            <p class="footer-text">
-              Subscribe to the Blackpeak newsletter for updates on events, competitions &amp; up-coming changes to the website.
-            </p>
-            <form class="newsletter">
-            <div class="form-group">
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your name">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email Address">
-            </div>
-            <button type="submit" class="btn btn-primary newsletter-submit">Submit</button>
-          </form>
+
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-3">
+
           </div>
         </div>
       </footer>
+      <!-- Scripts -->
+      <script type="text/javascript" src="/js/slickslider-homepage.js"></script>
     </body>
 </html>
